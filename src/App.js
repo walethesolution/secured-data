@@ -10,4 +10,26 @@ function App({ signOut, user }) {
   );
 }
 
+// const App = () => {
+//   const [authenticated, setAuthenticated] = useState(false);
+
+//   const handleSignIn = () => {
+//     setAuthenticated(true);
+//   };
+
+//   const handleSignOut = () => {
+//     setAuthenticated(false);
+//   };
+
+//   return (
+//     <div>
+//       <h1>React App with AWS Integration</h1>
+//       <Authentication onSignIn={handleSignIn} onSignOut={handleSignOut} />
+//       {authenticated && <DataFetching />}
+//     </div>
+//   );
+// };
+
+// export default App;
+
 export default withAuthenticator(App);
